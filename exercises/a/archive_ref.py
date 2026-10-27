@@ -37,7 +37,7 @@ def whole_years(start, end):
     return years
 
 def is_open(created, today=None, years=60):
-    """True when a record created on  is past its access period."""
+    """True when a record created on `created` is past its access period."""
     today = today or date.today()
     return whole_years(created, today) >= years
 
